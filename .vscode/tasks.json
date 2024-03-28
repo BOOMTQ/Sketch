@@ -1,0 +1,102 @@
+
+{
+  // Automatically created by phoityne-vscode extension.
+
+  "version": "2.0.0",
+  "presentation": {
+    "reveal": "always",
+    "panel": "new"
+  },
+  "tasks": [
+    {
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "label": "haskell build",
+      "type": "shell",
+      "command": "stack build"
+    },
+    {
+      "group": "build",
+      "type": "shell",
+      "label": "haskell clean & build",
+      "command": "stack clean && stack build"
+    },
+    {
+      "group": {
+        "kind": "test",
+        "isDefault": true
+      },
+      "type": "shell",
+      "label": "haskell test",
+      "command": "stack test"
+    },
+    {
+      "isBackground": true,
+      "type": "shell",
+      "label": "haskell watch",
+      "command": "stack build --test --no-run-tests --file-watch"
+    },
+    {
+      "type": "cppbuild",
+      "label": "C/C++: gcc.exe 生成活动文件",
+      "command": "D:\\mingw64\\bin\\gcc.exe",
+      "args": [
+        "-fdiagnostics-color=always",
+        "-g",
+        "${file}",
+        "-o",
+        "${fileDirname}\\${fileBasenameNoExtension}.exe"
+      ],
+      "options": {
+        "cwd": "${fileDirname}"
+      },
+      "problemMatcher": [
+        "$gcc"
+      ],
+      "group": "build",
+      "detail": "编译器: D:\\mingw64\\bin\\gcc.exe"
+    },
+    {
+      "type": "cppbuild",
+      "label": "C/C++: gcc.exe 生成活动文件",
+      "command": "D:\\mingw64\\bin\\gcc.exe",
+      "args": [
+        "-fdiagnostics-color=always",
+        "-g",
+        "${file}",
+        "-o",
+        "${fileDirname}\\${fileBasenameNoExtension}.exe"
+      ],
+      "options": {
+        "cwd": "${fileDirname}"
+      },
+      "problemMatcher": [
+        "$gcc"
+      ],
+      "group": "build",
+      "detail": "编译器: D:\\mingw64\\bin\\gcc.exe"
+    },
+    {
+      "type": "cppbuild",
+      "label": "C/C++: gcc.exe 生成活动文件",
+      "command": "D:\\mingw64\\bin\\gcc.exe",
+      "args": [
+        "-fdiagnostics-color=always",
+        "-g",
+        "${file}",
+        "-o",
+        "${fileDirname}\\${fileBasenameNoExtension}.exe"
+      ],
+      "options": {
+        "cwd": "${fileDirname}"
+      },
+      "problemMatcher": [
+        "$gcc"
+      ],
+      "group": "build",
+      "detail": "编译器: D:\\mingw64\\bin\\gcc.exe"
+    }
+  ]
+}
